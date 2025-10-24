@@ -1,66 +1,40 @@
 export default function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
-      {/* Contenedor principal */}
-      <header className="w-full max-w-6xl bg-white shadow-xl rounded-2xl p-6 mb-6 border border-gray-200">
-        <h1 className="text-3xl font-bold text-green-700 text-center mb-2">
-          Centro de Gestión de Mercados, Logística y Tecnologías de la Información (CGMTLI)
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-6">
+      <div className="bg-white shadow-2xl rounded-2xl w-full max-w-md p-6 border border-gray-200">
+        <h1 className="text-center text-2xl font-bold text-green-700 mb-6">
+          Servicio Nacional de Aprendizaje
         </h1>
-        <p className="text-center text-gray-600 mb-4">
-          SENA Bogotá – Formación para el trabajo y desarrollo tecnológico
-        </p>
-      </header>
 
-      {/* Sección de Historia */}
-      <section className="w-full max-w-6xl bg-white shadow-md rounded-2xl p-6 mb-6 border border-gray-200">
-        <h2 className="text-2xl font-semibold mb-4 text-green-700">Historia</h2>
-        <p className="text-gray-700 leading-relaxed">
-          El CGMTLI del SENA Bogotá se ha destacado por su compromiso con la formación de
-          profesionales en áreas de logística, tecnología de la información y mercados. Desde su
-          creación, ha desarrollado programas innovadores que combinan la teoría con la práctica,
-          promoviendo la competitividad y la empleabilidad de sus aprendices.
-        </p>
-      </section>
+        <section className="mb-6 text-center">
+          <h2 className="text-xl font-semibold mb-2">Formación para el trabajo</h2>
+          <button className="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-lg transition">
+            Conocer más
+          </button>
+        </section>
 
-      {/* Sección de Ubicación */}
-      <section className="w-full max-w-6xl bg-white shadow-md rounded-2xl p-6 mb-6 border border-gray-200">
-        <h2 className="text-2xl font-semibold mb-4 text-green-700">Ubicación</h2>
-        <p className="text-gray-700 mb-4">
-          Calle 52 No. 13-65, Bogotá, Colombia
-        </p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.123456789!2d-74.080!3d4.624!2m3!1f0!2f0!3f0!3"
-          width="100%"
-          height="450"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
-      </section>
+        <section className="mb-6">
+          <h3 className="text-lg font-semibold text-center mb-4">Programas y formación</h3>
+          <div className="flex justify-center gap-3 flex-wrap">
+            <div className="bg-green-100 px-4 py-2 rounded-lg font-medium">ADSO</div>
+            <div className="bg-green-100 px-4 py-2 rounded-lg font-medium">Animación 3D</div>
+            <div className="bg-green-100 px-4 py-2 rounded-lg font-medium">Redes de datos</div>
+          </div>
+        </section>
 
-      {/* Sección de Programas */}
-      <section className="w-full max-w-6xl bg-white shadow-md rounded-2xl p-6 mb-6 border border-gray-200">
-        <h2 className="text-2xl font-semibold mb-4 text-green-700">Programas Ofrecidos</h2>
-        <ul className="list-disc pl-6 text-gray-700">
-          <li>Logística Empresarial</li>
-          <li>Gestión de Mercados</li>
-          <li>Tecnologías de la Información</li>
-          <li>Programas complementarios en áreas afines</li>
-        </ul>
-      </section>
-
-      {/* Sección de Contacto */}
-      <section className="w-full max-w-6xl bg-white shadow-md rounded-2xl p-6 mb-6 border border-gray-200">
-        <h2 className="text-2xl font-semibold mb-4 text-green-700">Contacto</h2>
-        <p className="text-gray-700 mb-4">
-          Para más información o inscripciones, puedes comunicarte a través de los siguientes medios:
-        </p>
-        <ul className="list-none pl-0 text-gray-700">
-          <li><strong>Teléfono:</strong> (1) 5461600 Ext. 17044-16938-16995</li>
-          <li><strong>Correo electrónico:</strong> <a href="mailto:masaavedrar@sena.edu.co" className="text-blue-600">masaavedrar@sena.edu.co</a></li>
-          <li><strong>Horario de atención:</strong> Lunes a viernes de 7:00 a.m. a 9:00 p.m.</li>
-        </ul>
-      </section>
+        <section>
+          <h3 className="text-lg font-semibold text-center mb-4">Contacto</h3>
+          <form className="flex flex-col gap-3">
+            <input type="text" placeholder="Nombre" className="border border-gray-300 p-2 rounded-lg" />
+            <input type="email" placeholder="Correo" className="border border-gray-300 p-2 rounded-lg" />
+            <textarea placeholder="Mensaje" rows="3" className="border border-gray-300 p-2 rounded-lg"></textarea>
+            <button className="bg-green-600 hover:bg-green-700 text-white font-medium py-2 rounded-lg transition">
+              Contactar
+            </button>
+          </form>
+        </section>
+      </div>
     </div>
-  );
+  )
 }
+
